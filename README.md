@@ -40,7 +40,7 @@ import("lipsync");
 Alternatively, use Unpkg:
 
 ```html
-<script src="https://unpkg.com/lipsync@2.0.0/src/lipSyncComponent.js"></script>
+<script src="https://unpkg.com/lipsync@2.0.2/src/lipSyncComponent.js"></script>
 ```
 
 #### Without using Web components
