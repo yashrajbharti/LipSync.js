@@ -2,6 +2,9 @@
 
 **lipSync.js** is a dynamic, CSS-powered web UI framework for simulating mouth movements based on phonemes or groups of letters. It uses the `@layer` feature in CSS to create visually appealing animations for lips, tongue, and teeth in real-time, enabling lip-syncing effects for web applications.
 
+![LipSync](https://github.com/user-attachments/assets/f643c55a-5acc-46b5-b550-220b7a164e04)
+
+
 ---
 
 ## 🌟 Features
