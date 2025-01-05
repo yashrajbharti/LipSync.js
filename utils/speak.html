@@ -1,0 +1,32 @@
+<p id="text-to-speak">Hello, this is a simple example of Web Speech Synthesis API in action!</p>
+<button onclick="speakText()">Speak</button>
+<script>
+    function speakText() {
+        const text = document.getElementById("text-to-speak").textContent;
+        const utterance = new SpeechSynthesisUtterance(text);
+
+        const voices = window.speechSynthesis.getVoices();
+        const englishVoice = voices.find(voice =>
+            voice.lang === "en-GB"
+        );
+
+        if (englishVoice) {
+            utterance.voice = englishVoice;
+        } else {
+            console.warn("English (UK) voice not found, using default voice.");
+        }
+
+        const words = text.split(/\s+/);
+        let wordIndex = 0;
+
+        utterance.onboundary = (event) => {
+            if (event.name === 'word' && wordIndex < words.length) {
+                console.log(words[wordIndex]);
+                wordIndex++;
+            }
+        };
+
+        window.speechSynthesis.speak(utterance);
+    }
+
+</script>

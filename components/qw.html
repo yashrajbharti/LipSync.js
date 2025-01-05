@@ -1,0 +1,69 @@
+<style>
+    body {
+        inline-size: 100dvw;
+        block-size: 100dvh;
+        background-color: #efbd90;
+        display: grid;
+        place-items: center;
+    }
+
+    @layer mouth, tongue, teeth;
+
+    [data-letters="qw"] {
+        @layer mouth {
+            &.mouth {
+                position: relative;
+                background-color: #b63c2c;
+                overflow: hidden;
+                inline-size: 85px;
+                block-size: 32px;
+                border-radius: 45% 55% 50% 50% / 10% 10% 100% 100%;
+            }
+        }
+
+        @layer tongue {
+            .tongue {
+                position: absolute;
+                inset-block-end: -10px;
+                inline-size: 30px;
+                block-size: 25px;
+                background-color: #ef7d4a;
+                border-radius: 51% 49% 54% 46% / 34% 39% 61% 66%;
+
+                &.left-part {
+                    inset-inline-start: 20%;
+                }
+
+                &.right-part {
+                    inset-inline-end: 20%;
+                }
+            }
+        }
+
+        @layer teeth {
+            .teeth {
+                position: absolute;
+                inline-size: 85px;
+                block-size: 12px;
+                background-color: #fffffd;
+                inset-inline-start: 0px;
+
+                &.upper-part {
+                    inset-block-start: 0px;
+                    border-radius: 0 0 80px 80px;
+                }
+
+                &.lower-part {
+                    inset-block-end: -12px;
+                }
+            }
+        }
+    }
+</style>
+
+<div class="mouth" data-letters="qw">
+    <div class="tongue left-part"></div>
+    <div class="tongue right-part"></div>
+    <div class="teeth upper-part"></div>
+    <div class="teeth lower-part"></div>
+</div>
