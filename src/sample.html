@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LipSync Web Component Example</title>
+    <style>
+        body {
+            inline-size: 100dvw;
+            block-size: 100dvh;
+            background-color: #efbd90;
+            display: grid;
+            place-items: center;
+        }
+    </style>
+    <script src="./lipSyncComponent.js"></script>
+</head>
+
+<body>
+    <lip-sync data-letters="aei"></lip-sync>
+
+    <script>
+        const lipSyncTypes = [
+            "aei",
+            "bmp",
+            "cdgknstxyz",
+            "chjsh",
+            "ee",
+            "fv",
+            "l",
+            "o",
+            "qw",
+            "r",
+            "th",
+            "u",
+        ];
+
+        const mouth = document.querySelector("lip-sync");
+
+        setInterval(() => {
+            mouth.setAttribute("data-letters", lipSyncTypes[~~(Math.random() * 12)]);
+        }, 500);
+
+    </script>
+</body>
+
+</html>

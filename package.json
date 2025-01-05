@@ -1,0 +1,24 @@
+{
+  "name": "lipsync",
+  "version": "2.0.1",
+  "description": "**lipSync.js** is a dynamic, CSS-powered web UI framework for simulating mouth movements based on phonemes or groups of letters. It uses the `@layer` feature in CSS to create visually appealing animations for lips, tongue, and teeth in real-time, enabling lip-syncing effects for web applications.",
+  "main": "/src/lipSyncComponent.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yashrajbharti/LipSync.js.git"
+  },
+  "keywords": [
+    "css",
+    "layer",
+    "lipSync"
+  ],
+  "author": "yash",
+  "license": "MIT LICENSE",
+  "bugs": {
+    "url": "https://github.com/yashrajbharti/LipSync.js/issues"
+  },
+  "homepage": "https://github.com/yashrajbharti/LipSync.js#readme"
+}

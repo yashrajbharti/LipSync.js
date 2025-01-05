@@ -5,6 +5,9 @@
 ![LipSync](https://github.com/user-attachments/assets/f643c55a-5acc-46b5-b550-220b7a164e04)
 
 [LipSync | Live Codepen](https://codepen.io/driftblaze/pen/ogvoadj)
+
+[NPM Package Link](https://www.npmjs.com/package/lipsync)
+
 ---
 
 ## 🌟 Features
@@ -19,6 +22,28 @@
 ## 🚀 Getting Started
 
 ### Installation
+
+#### Using Web Components
+
+1. Install using NPM:
+
+```bash
+npm i lipsync
+```
+
+Then import:
+
+```js
+import("lipsync");
+```
+
+Alternatively, use Unpkg:
+
+```html
+<script src="https://unpkg.com/lipsync@2.0.0/src/lipSyncComponent.js"></script>
+```
+
+#### Without using Web components
 
 1. Clone the repository:
 
@@ -37,7 +62,7 @@
 
 ### Usage
 
-1. Define an element in your HTML to represent the mouth:
+1. Define an element / Web Component in your HTML to represent the mouth:
 
    ```html
    <div class="mouth" data-letters="aei">
@@ -45,6 +70,12 @@
        <div class="teeth upper-part"></div>
        <div class="teeth lower-part"></div>
    </div>
+   ```
+
+   OR
+
+   ```html
+    <lip-sync data-letters="aei"></lip-sync>
    ```
 
 2. Add the `data-letters` attribute to define the phoneme type. Supported phoneme groups:
