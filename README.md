@@ -94,6 +94,9 @@ setInterval(() => {
 - Modify `lipSync.css` to adjust mouth, tongue, or teeth styles.
 - Add new phoneme groups by extending the `lipSyncTypes` array and defining new `data-letters` styles.
 
+> [!TIP]
+> To better understand the working, you can check out [Medium Article on LipSync](https://medium.com/@yashrajbharti.met18/lipsyncing-made-dead-simple-using-pure-css-e345ce604c94) too!
+
 ---
 
 ## 🛠️ Future Scope
@@ -102,7 +105,7 @@ setInterval(() => {
 - **Facial Gestures**, add animations to eyes like closing, partial close etc for extra facial expressions.
 - **Playground**, have a whole figma svg plugin and css playground where developers can pick across various faces, eyes and mouth, combine and use directly by copying code.
 
-> [!TIP]
+> [!IMPORTANT]
 > The utils folder provides a way of using the `SpeechSynthesis` interface of the Web Speech API to understand how use the lip sync features.
 
 ---
