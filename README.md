@@ -4,7 +4,7 @@
 
 ![LipSync](https://github.com/user-attachments/assets/f643c55a-5acc-46b5-b550-220b7a164e04)
 
-[codepen](https://codepen.io/driftblaze/pen/ogvoadj)
+[LipSync | Live Codepen](https://codepen.io/driftblaze/pen/ogvoadj)
 ---
 
 ## 🌟 Features
